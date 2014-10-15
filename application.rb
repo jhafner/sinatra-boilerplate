@@ -50,4 +50,9 @@ class App < Sinatra::Base
     haml :index
   end
 
+  get '/about' do
+    cache_control :public, :must_revalidate, :max_age => 3600
+    haml :about
+  end
+
 end
