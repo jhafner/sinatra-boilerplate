@@ -1,7 +1,6 @@
-source :rubygems
-ruby '1.9.3'
+source "https://rubygems.org"
+ruby '2.0.0'
 
-gem 'heroku'
 gem 'foreman'
 gem 'unicorn'
 gem 'sinatra', :require => 'sinatra/base'
@@ -16,7 +15,7 @@ gem 'sinatra-partial',   :require => 'sinatra/partial'
 #gem 'sinatra-assetpack', :require => 'sinatra/assetpack', :path => '/Users/philoye/code/sinatra-assetpack', :branch => 'my_master'
 gem 'sinatra-assetpack', :require => 'sinatra/assetpack', :git => 'git://github.com/philoye/sinatra-assetpack.git', :branch => 'my_master'
 
-gem 'haml', '~> 3.2.beta'
+gem 'haml'
 gem 'sass'
 gem 'compass'
 gem 'coffee-script'
